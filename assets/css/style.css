@@ -6,7 +6,7 @@
 
     --text-main: #ffffff;
     --text-accent: #ffcc00;  /* championship gold */
-    --text-links: #00d9ff;   /* broadcast neon cyan */
+    --text-links: #ffcc00;  
     --text-highlight: #ff2a2a;
 
     --border-main: #ffcc00;
@@ -27,6 +27,10 @@ body {
     background: var(--bg-main);
     background-image: radial-gradient(var(--star-color) 1px, transparent 1px);
     background-size: 20px 20px;
+}
+
+a {
+    color: var(--text-main);
 }
 
 .container {
