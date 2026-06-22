@@ -3,7 +3,7 @@ layout: default
 title: Home
 ---
 
-![Stone Cold Steve Austin](https://media.tenor.com/RxH__vKQ5gsAAAAC/the-rock-stone-cold.gif)
+<img src="https://media.tenor.com/RxH__vKQ5gsAAAAC/the-rock-stone-cold.gif" alt="" width="95%">
 
 ## Latest Posts
 
