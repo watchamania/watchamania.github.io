@@ -3,7 +3,7 @@ layout: default
 title: Home
 ---
 
-<img src="https://media.tenor.com/RxH__vKQ5gsAAAAC/the-rock-stone-cold.gif" alt="" width="95%">
+<img src="https://media.tenor.com/RxH__vKQ5gsAAAAC/the-rock-stone-cold.gif" alt="" width="100%">
 
 ## Latest Posts
 
