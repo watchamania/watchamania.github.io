@@ -94,7 +94,7 @@ h1 a {
 
 .content {
     flex: 1;
-    padding: 20px;
+    padding: 15px;
     text-align: left;
     background: var(--bg-main);
 }
