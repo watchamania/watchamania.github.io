@@ -51,6 +51,7 @@ h1 a {
     font-size: clamp(2rem, 6vw, 4rem);
     color: var(--text-accent);
     text-shadow: 4px 4px var(--heading-shadow);
+    text-decoration: none;
 }
 
 .sparkle {
