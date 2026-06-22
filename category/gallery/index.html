@@ -1,0 +1,12 @@
+---
+layout: default
+title: Gallery
+---
+
+<h2>Gallery Posts</h2>
+
+<ul>
+{% for post in site.categories.gallery %}
+  <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+{% endfor %}
+</ul>

@@ -1,0 +1,123 @@
+:root {
+    --bg-main: #000;
+    --bg-panel: #111;
+    --bg-sidebar: #002868;
+    --bg-menu: #001a44;
+
+    --text-main: #fff;
+    --text-accent: #ffd700;
+    --text-links: #66ccff;
+    --text-highlight: #ff3131;
+
+    --border-main: #ffd700;
+    --border-secondary: #66ccff;
+
+    --heading-shadow: #66ccff;
+    --footer-bg: #ff3131;
+    --star-color: #fff;
+}
+
+* { box-sizing: border-box; }
+
+body {
+    margin: 0;
+    padding: 1rem;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    color: var(--text-main);
+    background: var(--bg-main);
+    background-image: radial-gradient(var(--star-color) 1px, transparent 1px);
+    background-size: 20px 20px;
+}
+
+.container {
+    width: min(1200px, 85%);
+    margin: 0 auto;
+    text-align: center;
+}
+
+h1 {
+    margin: 1rem 0;
+    font-size: clamp(2rem, 6vw, 4rem);
+    color: var(--text-accent);
+    text-shadow: 4px 4px var(--heading-shadow);
+}
+
+.sparkle {
+    text-shadow:
+        0 0 5px #fff,
+        0 0 10px #66ccff,
+        0 0 15px #ffd700;
+}
+
+.rainbow-border {
+    border: 3px solid transparent;
+    border-image: linear-gradient(90deg, red, orange, yellow, green, cyan, blue, violet) 1;
+}
+
+.main-layout {
+    display: flex;
+    margin-top: 20px;
+    border: 5px ridge var(--border-main);
+    background: var(--bg-panel);
+}
+
+.sidebar {
+    width: 250px;
+    flex-shrink: 0;
+    padding: 15px;
+    text-align: left;
+    background: var(--bg-sidebar);
+    border-right: 3px dashed var(--border-main);
+}
+
+.sidebar a {
+    display: block;
+    line-height: 2;
+    font-weight: bold;
+    text-decoration: none;
+    color: var(--text-links);
+}
+
+.sidebar a:hover { color: var(--text-accent); }
+
+.content {
+    flex: 1;
+    padding: 20px;
+    text-align: left;
+    background: var(--bg-main);
+}
+
+.mobile-menu { display: none; }
+
+.mobile-menu summary {
+    cursor: pointer;
+    padding: 12px;
+    background: var(--bg-menu);
+    color: var(--text-accent);
+    border: 3px ridge var(--border-secondary);
+    font-weight: bold;
+}
+
+.mobile-menu nav {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.desktop-menu { display: block; }
+
+.footer {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 5px 10px;
+    background: var(--footer-bg);
+    color: var(--text-main);
+    border: 2px solid var(--border-main);
+}
+
+@media (max-width: 768px) {
+    .main-layout { flex-direction: column; }
+    .sidebar { width: 100%; }
+    .desktop-menu { display: none; }
+    .mobile-menu { display: block; }
+}

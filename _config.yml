@@ -1,0 +1,12 @@
+title: WATCHAMANIA
+description: The #1 Wrestling Nostalgia Zone
+
+markdown: kramdown
+permalink: /:categories/:title/
+
+paginate: 5
+paginate_path: "/page:num"
+
+plugins:
+  - jekyll-paginate
+
