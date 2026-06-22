@@ -124,7 +124,7 @@ h1 a {
 
 @media (max-width: 768px) {
     .main-layout { flex-direction: column; }
-    .sidebar { width: 100%; }
+    .sidebar { width: 100%; border-right: none; }
     .desktop-menu { display: none; }
     .mobile-menu { display: block; }
     .container { width: 100%;}
