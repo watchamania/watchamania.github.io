@@ -1,0 +1,14 @@
+---
+layout: default
+title: Roster
+---
+
+<h2>The Roster</h2>
+
+These are some famous wrestlers you can find more about...
+
+<ul>
+{% for post in site.categories.roster %}
+  <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+{% endfor %}
+</ul>
